@@ -1,13 +1,39 @@
+/*****************************************************************
+
+                            CUSTOM PART                                    
+
+******************************************************************/
+
+:root { 
+    --body-color: white; /*couleur attendue*/
+    --color: black; /*couleur attendue*/
+    --back-color: rgb(230, 230, 230); /*couleur attendue*/
+    --meter-color : black; /*couleur attendue*/
+    --progress-value : black; /*couleur attendue*/
+    --padding : 10px; /*nombre attendu (px ou %)*/
+    --deco : none; /*none ou initial*/
+    --del-color : red; /*couleur attendue*/
+    --ins-color : green; /*couleur attendue*/
+    --radius : 100px; /*nombre attendu (px)*/
+    --back-table: lightgrey; /*couleur attendue*/
+}
+
+/*****************************************************************
+
+                            ELEMENTS                                    
+
+******************************************************************/
+
+body{ background-color: var(--body-color); color:var(--color) }
 .flex { display: flex; flex-wrap: wrap; }
 .grid { display: grid; }
-
 .grid-temp-col-2 { grid-template-columns: repeat(2, 1fr); }
 .grid-temp-col-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-temp-col-4 { grid-template-columns: repeat(4, 1fr); }
 .grid-temp-col-5 { grid-template-columns: repeat(5, 1fr); }
 .grid-temp-col-6 { grid-template-columns: repeat(6, 1fr); }
 .grid-temp-col-7 { grid-template-columns: repeat(7, 1fr); }
-
+.grid-temp-col-8 { grid-template-columns: repeat(8, 1fr); }
 .grid-col-1 { grid-column: 1; }
 .grid-col-2 { grid-column: 2; }
 .grid-col-3 { grid-column: 3; }
@@ -15,7 +41,7 @@
 .grid-col-5 { grid-column: 5; }
 .grid-col-6 { grid-column: 6; }
 .grid-col-7 { grid-column: 7; }
-
+.grid-col-8 { grid-column: 8; }
 .grid-row-1 { grid-row: 1; }
 .grid-row-2 { grid-row: 2; }
 .grid-row-3 { grid-row: 3; }
@@ -23,43 +49,30 @@
 .grid-row-5 { grid-row: 5; }
 .grid-row-6 { grid-row: 6; }
 .grid-row-7 { grid-row: 7; }
-
+.grid-row-8 { grid-row: 8; }
 .text-left { text-align: left; justify-content: left; }
 .text-right { text-align: right; justify-content: right; }
 .text-center { text-align: center; justify-content: center; }
-
-.quote { border-left: 1px black solid; padding-left: 10px }
-
-table, tr, th, td { border: solid 1px black; }
-tbody > tr:nth-child(odd) { background-color: lightgrey; }
+.quote { border-left: 1px var(--color) solid; padding-left: var(--padding); }
+table, tr, th, td { border: solid 1px var(--color); }
+tbody > tr:nth-child(odd) { background-color: var(--back-table); }
 table caption { font-style: italic; }
-
-code { background-color: rgb(230, 230, 230); border-radius: 2px;}
-kbd { background-color: rgb(230, 230, 230); border-radius: 2px;}
-
-del { text-decoration-color: red; }
-ins { text-decoration-color: green; }
-
+.code { background-color: var(--back-color); border-radius: 2px;}
+del { text-decoration-color: var(--del-color); }
+ins { text-decoration-color: var(--ins-color); }
 figcaption { font-style: italic; }
-
 .parent-header { display: flex; flex-direction: column; position: relative; }
 header { order: -1; width: 100%; }
-
 .parent-footer { display: flex; flex-direction: column; position: relative; }
 footer { order: 1; width: 100%; }
-
-meter::-webkit-meter-optimum-value { background-color: black; }
-
-nav > *:not(:last-child) { text-decoration: none; border-right: solid 1px black; padding-right: 10px; padding-left: 10px} 
-nav > *:last-child { text-decoration: none; padding-left: 10px}
-
-optgroup { background-color: rgb(230, 230, 230); }
-option { background-color: white; }
-
+meter::-webkit-meter-optimum-value { background-color: var(--meter-color); }
+nav > *:not(:last-child) { text-decoration: var(--deco); border-right: solid 1px var(--color); padding-right: var(--padding); padding-left: var(--padding);} 
+nav > *:last-child { text-decoration: var(--deco); padding-left: var(--padding);}
+optgroup { background-color: var(--back-color); }
+option { background-color: var(--body-color); }
 progress { -webkit-appearance: none; }
-progress::-webkit-progress-value { background-color: black; border-radius: 100px;}
-progress::-webkit-progress-bar { border-radius: 100px; height: 80%; margin-top: 2%; background-color: rgb(230, 230, 230); }
-
+progress::-webkit-progress-value { background-color: var(--progress-value); border-radius: var(--radius);}
+progress::-webkit-progress-bar { border-radius: var(--radius); height: 80%; margin-top: 2%; background-color: var(--back-color); }
 search { position: relative; display: inline-block; }
 search *{ border-radius: 100px; }
 search::after { content: "🔍"; position: absolute; right: 10px; top: 25%; transform: translateY(-50%); font-size: 16px; }
