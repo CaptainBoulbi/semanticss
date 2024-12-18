@@ -182,7 +182,13 @@
                 <input type="date" id="birthday" name="birthday"><br><br>
                 <input type="submit" value="Submit">
             </fieldset>
-        </form> 
+        </form>
+
+        <form action="demo_keygen.asp" method="get">
+          <keygen name="rsaPublicKey" keytype="RSA">
+          Nom de l'utilisateur: <input type="text" name="usr_name">
+          <input type="submit">
+        </form>
 
         <h2>Figure/Caption</h2>
         <figure>
@@ -284,6 +290,7 @@
         <h2>Object</h2>
         <object data="https://penger.neocities.org/media/STOMP.ogg">
             <param name="autoplay" value="true">
+            <track kind="captions" src="trcu" srclang="fr" /> <!-- sous titres -->
         </object> 
         <br>
 
@@ -299,6 +306,9 @@
                 <option value="audi">Audi</option>
             </optgroup>
         </select>
+
+        <h2>Output</h2>
+        <p>10 + 2 = <output>12</output></p>
 
         <h2>Pre</h2>
         <pre>
@@ -371,5 +381,8 @@
 
         <h2>Var</h2>
         <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+        <h2>WBR</h2>
+        <div style="width: 60px; border: black 1px solid;"><p>anti<wbr>constitu<wbr>tionn<wbr>ellement</p></div>
     </body>
 </html>
