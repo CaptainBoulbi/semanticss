@@ -53,6 +53,7 @@ body{ background-color: var(--body-color); color:var(--color) }
 .text-left { text-align: left; justify-content: left; }
 .text-right { text-align: right; justify-content: right; }
 .text-center { text-align: center; justify-content: center; }
+a {text-decoration: var(--deco); color: var(--color);}
 .quote { border-left: 1px var(--color) solid; padding-left: var(--padding); }
 table, tr, th, td { border: solid 1px var(--color); }
 tbody > tr:nth-child(odd) { background-color: var(--back-table); }
