@@ -8,14 +8,14 @@
     --body-color: white; /*couleur attendue*/
     --color: black; /*couleur attendue*/
     --back-color: rgb(230, 230, 230); /*couleur attendue*/
-    --meter-color : black; /*couleur attendue*/
-    --progress-value : black; /*couleur attendue*/
+    --meter-color : black; /*couleur de la barre meter // couleur attendue*/
+    --progress-value : black; /*couleur de la barre progress // couleur attendue*/
     --padding : 10px; /*nombre attendu (px ou %)*/
     --deco : none; /*none ou initial*/
-    --del-color : red; /*couleur attendue*/
-    --ins-color : green; /*couleur attendue*/
+    --del-color : red; /*couleur de la balise del // couleur attendue*/
+    --ins-color : green; /*couleur de la balise ins // couleur attendue*/
     --radius : 100px; /*nombre attendu (px)*/
-    --back-table: lightgrey; /*couleur attendue*/
+    --back-table: lightgrey; /*couleur du background d'une table // couleur attendue*/
 }
 
 /*****************************************************************
