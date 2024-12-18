@@ -29,3 +29,27 @@
 .left { float: left; }
 
 .right { float: right; }
+
+.aside-left { text-align: left; justify-content: left; }
+
+.aside-right { text-align: right; justify-content: right; }
+
+.quote { border-left: 1px black solid; padding-left: 10px }
+
+table, tr, th, td { border: solid 1px black; }
+
+tbody > tr:nth-child(odd) { background-color: lightgrey; }
+
+table caption { font-style: italic; }
+
+code { background-color: rgb(230, 230, 230); border-radius: 2px;}
+
+del { text-decoration-color: red; }
+
+ins { text-decoration-color: green; }
+
+figcaption { font-style: italic; }
+
+.parent-header { display: flex; flex-direction: column; position: relative; }
+
+header { order: -1; width: 100%; }

@@ -31,7 +31,7 @@
             Example.com<br>
             Box 564, Disneyland<br>
             USA
-        </address> 
+        </address>
 
         <h2>Area</h2>
         <img src="https://g.foolcdn.com/editorial/images/444990/workplace_gettyimages-508210332.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
@@ -39,7 +39,7 @@
             <area shape="rect" coords="34,44,270,350" alt="Computer" href="google.com">
             <area shape="rect" coords="290,172,333,250" alt="Phone" href="youtube.com">
             <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="amazon.com">
-        </map> 
+        </map>
 
         <h2>Article</h2>
         <article>
@@ -49,16 +49,16 @@
         </article>
 
         <h2>Aside</h2>
-        <aside>
+        <aside class="aside-left">
             <h4>Epcot Center</h4>
             <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-        </aside> 
+        </aside>
 
         <h2>Audio</h2>
         <audio controls>
             <source src="https://penger.neocities.org/media/STOMP.ogg" type="audio/ogg">
             Your browser does not support the audio tag.
-        </audio> 
+        </audio>
 
         <h2>Bold</h2>
         <b>Bold text</b>
@@ -69,14 +69,14 @@
         <h2>BDO</h2>
         <bdo dir="rtl">
             This text will go right-to-left.
-        </bdo> 
+        </bdo>
         <br>
         <bdo dir="ltr">
             This text will go left-to-right.
         </bdo> 
         
         <h2>Quote</h2>
-        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        <blockquote cite="http://www.worldwildlife.org/who/index.html" class="quote">
             For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
         </blockquote> 
 
@@ -86,10 +86,12 @@
         <h2>Caption</h2>
         <table>
             <caption>Monthly savings</caption>
-            <tr>
-                <th>Month</th>
-                <th>Savings</th>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
             <tr>
                 <td>January</td>
                 <td>$100</td>
@@ -98,7 +100,7 @@
 
         <h2>Table</h2>
         <table>
-            <caption>caption title</caption>
+            <caption>Caption title</caption>
             <thead>
                 <tr>
                     <th>Month</th>
@@ -117,7 +119,7 @@
                     <td>$100</td>
                 </tr>
             </tfoot>
-        </table> 
+        </table>
 
         <h2>Cite</h2>
         <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p> 
@@ -184,11 +186,15 @@
         </figure> 
 
         <h2>Header</h2>
-        <header>
-            <h1>A heading here</h1>
-            <p>Posted by John Doe</p>
-            <p>Some additional information here</p>
-        </header>
+        <div class="parent-header">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam tellus, commodo at massa sit amet, ullamcorper gravida dui. Vivamus at ipsum justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi egestas imperdiet ipsum laoreet convallis. Sed eu pulvinar ligula, eu finibus nulla. Duis a lectus hendrerit, cursus erat fringilla, blandit tellus. Quisque condimentum pulvinar neque ut mattis. Suspendisse mollis nulla nec urna placerat tincidunt. Aenean mattis augue libero, eget rhoncus dui ornare et. Pellentesque iaculis aliquam tortor, quis molestie justo maximus id.</p>
+            <header>
+                <h1>A heading here</h1>
+                <p>Posted by John Doe</p>
+                <p>Some additional information here</p>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam tellus, commodo at massa sit amet, ullamcorper gravida dui. Vivamus at ipsum justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi egestas imperdiet ipsum laoreet convallis. Sed eu pulvinar ligula, eu finibus nulla. Duis a lectus hendrerit, cursus erat fringilla, blandit tellus. Quisque condimentum pulvinar neque ut mattis. Suspendisse mollis nulla nec urna placerat tincidunt. Aenean mattis augue libero, eget rhoncus dui ornare et. Pellentesque iaculis aliquam tortor, quis molestie justo maximus id.</p>
+        </div>
 
         <h2>Hgroup</h2>
         <hgroup>
