@@ -67,6 +67,7 @@ header { order: -1; width: 100%; }
 .parent-footer { display: flex; flex-direction: column; position: relative; }
 footer { order: 1; width: 100%; }
 meter::-webkit-meter-optimum-value { background-color: var(--meter-color); }
+nav { text-align:center; justify-content:center; }
 nav > *:not(:last-child) { text-decoration: var(--deco); border-right: solid 1px var(--color); padding-right: var(--padding); padding-left: var(--padding);} 
 nav > *:last-child { text-decoration: var(--deco); padding-left: var(--padding);}
 optgroup { background-color: var(--back-color); }
